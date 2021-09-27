@@ -66,6 +66,8 @@ Note:If the text contains special characters, please escape them according to th
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
                 <filteritem type="filename" name="CONTRIBUTORS" desc="no license header"/>
                 <filteritem type="filename" name="doc/mksyntaxgo" desc="no license header"/>
+                <filteritem type="filename" name="util/utf.h" desc="no license header"/>
+                <filteritem type="filename" name="util/rune.cc" desc="no license header"/>
             </filefilter>
         </filefilterlist>
         <licensematcherlist>
