@@ -57,7 +57,9 @@ ohos_shared_library("re2") {
     "util/util.h",
   ]
   include_dirs = [ "." ]
-  version_script = "libre2.map"
+  if (!is_asan) {
+    version_script = "libre2.map"
+  }
 
   # cflags = [ "-lpthread" ]
   # ldflags = [ "-pthread" ]
