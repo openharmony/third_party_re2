@@ -57,7 +57,7 @@ ohos_shared_library("re2") {
     "util/util.h",
   ]
   include_dirs = [ "." ]
-  if (!is_asan) {
+  if (!is_asan && !is_debug) {
     version_script = "libre2.map"
   }
 
