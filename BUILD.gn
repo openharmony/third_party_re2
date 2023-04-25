@@ -15,7 +15,7 @@ import("//build/ohos.gni")
 import("//developtools/profiler/build/config.gni")
 
 libre2_path = rebase_path("//third_party/re2")
-exec_script("install.sh", [ "$libre2_path"])
+exec_script("install.sh", [ "$libre2_path" ])
 ohos_shared_library("re2") {
   sources = [
     "re2-2021-11-01/re2/bitmap256.h",
