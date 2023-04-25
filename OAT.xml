@@ -53,6 +53,7 @@
                 <policyitem type="compatibility" name="LGPL" path="BUILD.gn" desc="They are used in dynamic link mode."/>
                 <policyitem type="compatibility" name="LGPL" path="install.sh" desc="They are used in dynamic link mode."/>
                 <policyitem type="compatibility" name="LGPL" path="re2.spec" desc="They are used in dynamic link mode."/>
+                <policyitem type="compatibility" name="BSD 3-Clause License" path="LICENSE*" desc="the license for re2"/>
             </policy>
         </policylist>
         <filefilterlist>
