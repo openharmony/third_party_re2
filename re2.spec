@@ -1,10 +1,12 @@
 Name:           re2
 Version:        20211101
-Release:        1
+Release:        3
 Summary:        Provide backtracking RE engine
 License:        BSD
 URL:            http://github.com/google/re2/
 Source0:        https://github.com/google/re2/archive/2021-11-01.tar.gz
+Patch0:         backport-fix-64-to-32-bit-clang-conversion-warning.patch
+Patch1:         add-some-testcases-for-abnormal-branches.patch
 BuildRequires:  gcc-c++
 
 %description
@@ -49,6 +51,12 @@ make %{?_smp_mflags} shared-test
 %exclude %{_libdir}/libre2.a
 
 %changelog
+* Wed Dec 14 2022 zhouyihang <zhouyihang3@h-partners.com> - 20211101-3
+- add some testcases for abnormal branches
+
+* Mon Oct 24 2022 gaihuiying <eaglegai@163.com> - 20211101-2
+- fix 64 to 32 bit clang conversion warning
+
 * Thu Dec 16 2021 yanglu <yanglu72@huawei.com> - 20211101-1
 - upgrade to 20211101
 
