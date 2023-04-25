@@ -74,13 +74,5 @@
             <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
             </filefilter>
         </filefilterlist>
-        <licensematcherlist>
-            <licensematcher name="BSD 3-Clause License" desc="the license not identify" >
-                <licensetext name="
-                 // Use of this source code is governed by a BSD-style
-                 // license that can be found in the LICENSE file.
-                " desc=""/>
-            </licensematcher>
-        </licensematcherlist>
     </oatconfig>
 </configuration>
