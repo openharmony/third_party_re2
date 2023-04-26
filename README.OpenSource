@@ -3,7 +3,7 @@
     "Name": "re2",
     "License": "BSD 3-Clause License",
     "License File": "LICENSE",
-    "Version Number": "2021-11-01",
+    "Version Number": "20211101.3",
     "Upstream URL": "https://github.com/google/re2",
     "Description": "RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library."
   }
