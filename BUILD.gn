@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Huawei Device Co., Ltd.
+# Copyright (c) 2021-2023 Huawei Device Co., Ltd.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -17,7 +17,7 @@ import("//developtools/profiler/build/config.gni")
 libre2_path = rebase_path("//third_party/re2")
 exec_script("install.sh", [ "$libre2_path" ])
 
-RE2_DIR = rebase_path("//third_party/re2//re2-2021-11-01")
+RE2_DIR = rebase_path("//third_party/re2/re2")
 ohos_shared_library("re2") {
   sources = [
     "${RE2_DIR}/re2/bitmap256.h",
@@ -60,14 +60,10 @@ ohos_shared_library("re2") {
     "${RE2_DIR}/util/utf.h",
     "${RE2_DIR}/util/util.h",
   ]
-  include_dirs = [ "re2-2021-11-01" ]
+  include_dirs = [ "re2" ]
   if (!is_asan && !is_debug) {
     version_script = "libre2.map"
   }
-
-  # cflags = [ "-lpthread" ]
-  # ldflags = [ "-pthread" ]
-  # visibility = ["*"]
   install_enable = true
   subsystem_name = "${OHOS_PROFILER_SUBSYS_NAME}"
   part_name = "${OHOS_PROFILER_PART_NAME}"
