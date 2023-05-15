@@ -1,6 +1,6 @@
 [
   {
-    "Name": "re2",
+    "Name": "openEuler:re2",
     "License": "BSD 3-Clause License",
     "License File": "LICENSE",
     "Version Number": "20211101-3.oe2203sp1",
