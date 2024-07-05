@@ -30,10 +30,6 @@
             "sub_component": [],
             "inner_kits": [
                 {
-                    "header": {
-                        "header_base": "//third_party/re2/re2",
-                        "header_files": []
-                    },
                     "name": "//third_party/re2:re2"
                 }
             ],
