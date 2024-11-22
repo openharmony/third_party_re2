@@ -20,6 +20,10 @@ libre2_path = rebase_path("//third_party/re2")
 exec_script("install.sh", [ "$libre2_path" ])
 
 RE2_DIR = rebase_path("//third_party/re2/re2")
+
+config("re2_public_config") {
+  include_dirs = [ "${RE2_DIR}/" ]
+}
 ohos_shared_library("re2") {
   sources = [
     "${RE2_DIR}/re2/bitmap256.h",
@@ -66,6 +70,7 @@ ohos_shared_library("re2") {
   if (!is_asan && !is_debug) {
     version_script = "libre2.map"
   }
+  public_configs = [ ":re2_public_config" ]
   install_enable = true
   subsystem_name = "${THIRDPARTY_RE2_SUBSYS_NAME}"
   part_name = "${THIRDPARTY_RE2_PART_NAME}"
