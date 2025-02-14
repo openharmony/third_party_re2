@@ -11,6 +11,6 @@ cd $1
 if [ -d "re2" ];then
     rm -rf re2
 fi
-tar zxvf re2-2021-11-01.tar.gz
-mv re2-2021-11-01 re2
+tar zxvf re2-2024-02-01.tar.gz
+mv re2-2024-02-01 re2
 exit 0

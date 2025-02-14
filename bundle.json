@@ -23,7 +23,9 @@
         "rom": "",
         "ram": "",
         "deps": {
-            "components": [],
+            "components": [
+                "abseil-cpp"
+            ],
             "third_party": []
         },
         "build": {
