@@ -3,7 +3,7 @@
     "Name": "openEuler:re2",
     "License": "BSD 3-Clause License",
     "License File": "LICENSE",
-    "Version Number": "20211101-3.oe2203sp3",
+    "Version Number": "20240201-1.oe2403sp1",
     "Upstream URL": "https://www.openeuler.org",
     "Description": "RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library."
   }

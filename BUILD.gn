@@ -26,6 +26,7 @@ config("re2_public_config") {
 }
 ohos_shared_library("re2") {
   sources = [
+    "${RE2_DIR}/re2/bitmap256.cc",
     "${RE2_DIR}/re2/bitmap256.h",
     "${RE2_DIR}/re2/bitstate.cc",
     "${RE2_DIR}/re2/compile.cc",
@@ -50,7 +51,6 @@ ohos_shared_library("re2") {
     "${RE2_DIR}/re2/simplify.cc",
     "${RE2_DIR}/re2/sparse_array.h",
     "${RE2_DIR}/re2/sparse_set.h",
-    "${RE2_DIR}/re2/stringpiece.cc",
     "${RE2_DIR}/re2/tostring.cc",
     "${RE2_DIR}/re2/unicode_casefold.cc",
     "${RE2_DIR}/re2/unicode_casefold.h",
@@ -70,6 +70,15 @@ ohos_shared_library("re2") {
   if (!is_asan && !is_debug) {
     version_script = "libre2.map"
   }
+  external_deps = [
+    "abseil-cpp:absl_base",
+    "abseil-cpp:absl_container",
+    "abseil-cpp:absl_cord",
+    "abseil-cpp:absl_hash",
+    "abseil-cpp:absl_spinlock_wait",
+    "abseil-cpp:absl_str_format_internal",
+    "abseil-cpp:absl_strings",
+  ]
   public_configs = [ ":re2_public_config" ]
   install_enable = true
   subsystem_name = "${THIRDPARTY_RE2_SUBSYS_NAME}"
