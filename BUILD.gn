@@ -75,6 +75,7 @@ ohos_shared_library("re2") {
     "abseil-cpp:absl_container",
     "abseil-cpp:absl_cord",
     "abseil-cpp:absl_hash",
+    "abseil-cpp:absl_raw_logging_internal",
     "abseil-cpp:absl_spinlock_wait",
     "abseil-cpp:absl_str_format_internal",
     "abseil-cpp:absl_strings",
