@@ -22,6 +22,7 @@ config("re2_public_config") {
   include_dirs = [ "${RE2_DIR}/" ]
 }
 ohos_shared_library("re2") {
+  branch_protector_ret = "pac_ret"
   sources = [
     "${RE2_DIR}/re2/bitmap256.cc",
     "${RE2_DIR}/re2/bitmap256.h",
